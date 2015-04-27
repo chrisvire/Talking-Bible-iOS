@@ -1,0 +1,50 @@
+PODS:
+  - Bolts (1.1.5):
+    - Bolts/AppLinks (= 1.1.5)
+    - Bolts/Tasks (= 1.1.5)
+  - Bolts/AppLinks (1.1.5):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.1.5)
+  - Branch (0.6.1)
+  - FlatUIKit (1.6)
+  - GoogleAnalytics-iOS-SDK (3.10):
+    - GoogleAnalytics-iOS-SDK/Core (= 3.10)
+  - GoogleAnalytics-iOS-SDK/Core (3.10)
+  - MDMCoreData/MDMCoreDataCore (1.5.0)
+  - MDMCoreData/MDMFetchedResultsTableDataSource (1.5.0):
+    - MDMCoreData/MDMCoreDataCore
+  - MDMCoreData/MDMPersistenceController (1.5.0):
+    - MDMCoreData/MDMCoreDataCore
+  - NullSafe (1.2.1)
+  - Parse (1.7.1):
+    - Bolts (~> 1.1)
+  - ParseCrashReporting (1.7.1):
+    - Parse (~> 1.7.1)
+  - Reachability (3.2)
+  - SSZipArchive (0.3.2)
+
+DEPENDENCIES:
+  - Branch
+  - FlatUIKit (~> 1.6)
+  - GoogleAnalytics-iOS-SDK (~> 3.10)
+  - MDMCoreData/MDMFetchedResultsTableDataSource (~> 1.5.0)
+  - MDMCoreData/MDMPersistenceController (~> 1.5.0)
+  - NullSafe (~> 1.2.1)
+  - Parse (~> 1.7.1)
+  - ParseCrashReporting (~> 1.7.1)
+  - Reachability (~> 3.2)
+  - SSZipArchive (~> 0.3.2)
+
+SPEC CHECKSUMS:
+  Bolts: aac24961496d504aa56fc267cde95162a71bac39
+  Branch: 823314e2d6acca2e50a86bb83ceac1b19286254a
+  FlatUIKit: a59c93fe2fde5329dfb71dd9317b1b0386d6a178
+  GoogleAnalytics-iOS-SDK: 4f98a376c1d61e6ac4ca47951655820314856eef
+  MDMCoreData: 402f754cda90865026a209243f1667824e775649
+  NullSafe: 20aabf66b5b36ddc5177bf2f56fcde83412bc901
+  Parse: fa8ec29de6d82035635986c11946299fb1b38316
+  ParseCrashReporting: 9aeff8680d500e5e833564fca5b60333f7bb7403
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SSZipArchive: 11801759495fa4efb7512ef652eb0042d68305d7
+
+COCOAPODS: 0.36.4

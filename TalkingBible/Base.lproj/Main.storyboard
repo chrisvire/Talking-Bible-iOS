@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="t35-lH-pXx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ihn-d1-R97">
+            <objects>
+                <navigationController storyboardIdentifier="TBNavigationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="t35-lH-pXx" sceneMemberID="viewController">
+                    <keyCommands>
+                        <keyCommand actionName=""/>
+                    </keyCommands>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="O3n-Xn-EHB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.92549020051956177" green="0.94117647409439087" blue="0.94509804248809814" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.25098040699958801" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <color key="textColor" red="0.92549020051956177" green="0.94117647409439087" blue="0.94509804248809814" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AKm-Iu-J2v" kind="relationship" relationship="rootViewController" id="NL0-8Q-Clc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Yn-qB-FLU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1940" y="7"/>
+        </scene>
+        <!--Talking Bible-->
+        <scene sceneID="CK6-5d-lBt">
+            <objects>
+                <viewController storyboardIdentifier="TBDashboardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AKm-Iu-J2v" customClass="DashboardViewController" customModule="Talking_Bible" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wjA-B6-sJJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="HI3-yP-HCw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Zg-rY-ait">
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bug" translatesAutoresizingMaskIntoConstraints="NO" id="UcQ-UY-YX1">
+                                <rect key="frame" x="245" y="50" width="110" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UcQ-UY-YX1" secondAttribute="height" multiplier="7:6" id="dJ4-p2-9lh"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hd9-K3-Gjp" userLabel="ContinueProgressView">
+                                <rect key="frame" x="0.0" y="154" width="600" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="center" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tK-CR-eiY" userLabel="ContinueProgressButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Returns to the most recently heard book" label="Continue listening"/>
+                                        <color key="tintColor" red="0.92549020049999997" green="0.94117647410000005" blue="0.94509804249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="titleEdgeInsets" minX="40" minY="15" maxX="40" maxY="15"/>
+                                        <inset key="imageEdgeInsets" minX="11" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="Play">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="PlayFilled"/>
+                                        <state key="highlighted" image="PlayFilled"/>
+                                        <connections>
+                                            <action selector="continueProgress" destination="AKm-Iu-J2v" eventType="touchUpInside" id="otX-Cb-VNr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.20392157137393951" green="0.28627452254295349" blue="0.36862745881080627" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="4tK-CR-eiY" firstAttribute="centerY" secondItem="hd9-K3-Gjp" secondAttribute="centerY" id="DNr-Pf-lI5"/>
+                                    <constraint firstItem="4tK-CR-eiY" firstAttribute="height" secondItem="hd9-K3-Gjp" secondAttribute="height" id="DnS-cH-Qng"/>
+                                    <constraint firstItem="4tK-CR-eiY" firstAttribute="width" secondItem="hd9-K3-Gjp" secondAttribute="width" id="Tf3-el-vgg"/>
+                                    <constraint firstItem="4tK-CR-eiY" firstAttribute="centerX" secondItem="hd9-K3-Gjp" secondAttribute="centerX" id="tJc-hS-Kre"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YOf-4F-JdY" userLabel="SelectLanguageView" customClass="DashboardButtonView" customModule="Talking_Bible" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="274" width="600" height="120"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Forward" translatesAutoresizingMaskIntoConstraints="NO" id="VBl-HA-FJU">
+                                        <rect key="frame" x="563" y="48.5" width="22" height="22"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0B-8H-Nv3" userLabel="SelectLanguageButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Displays the list of languages" label="Select a language"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="32"/>
+                                        <color key="tintColor" red="0.92549020049999997" green="0.94117647410000005" blue="0.94509804249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="titleEdgeInsets" minX="40" minY="15" maxX="40" maxY="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="48"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="XD3-qS-e7v" kind="show" identifier="ShowLanguagesIdentifier" id="6Go-4A-W5o"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.086274512110000007" green="0.62745100259999997" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="VBl-HA-FJU" secondAttribute="centerY" id="2nl-49-PB4"/>
+                                    <constraint firstItem="V0B-8H-Nv3" firstAttribute="centerY" secondItem="YOf-4F-JdY" secondAttribute="centerY" id="6OZ-eC-RZR"/>
+                                    <constraint firstItem="V0B-8H-Nv3" firstAttribute="centerX" secondItem="YOf-4F-JdY" secondAttribute="centerX" id="kvk-ey-W26"/>
+                                    <constraint firstItem="V0B-8H-Nv3" firstAttribute="width" secondItem="YOf-4F-JdY" secondAttribute="width" id="pzO-t6-Pt5"/>
+                                    <constraint firstAttribute="trailing" secondItem="VBl-HA-FJU" secondAttribute="trailing" constant="15" id="rsa-Wy-Ozt"/>
+                                    <constraint firstItem="V0B-8H-Nv3" firstAttribute="height" secondItem="YOf-4F-JdY" secondAttribute="height" id="xld-Vw-S5v"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="button" destination="V0B-8H-Nv3" id="7MK-Yh-OcH"/>
+                                    <outlet property="caret" destination="VBl-HA-FJU" id="FD9-tr-qJs"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1u-Il-uL0" userLabel="SelectBookView" customClass="DashboardButtonView" customModule="Talking_Bible" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="394" width="600" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztf-Hi-m09" userLabel="SelectBookButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Returns to the most recently heard book" label="Continue listening"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="28"/>
+                                        <color key="tintColor" red="0.92549020049999997" green="0.94117647410000005" blue="0.94509804249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="15" maxX="40" maxY="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="42"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="0KU-Od-Khg" kind="show" identifier="ShowBooksIdentifier" id="P6H-lD-Lyc"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Forward" translatesAutoresizingMaskIntoConstraints="NO" id="Gj1-Jv-Kfu">
+                                        <rect key="frame" x="563" y="48.5" width="22" height="22"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1019607857" green="0.73725491759999995" blue="0.61176472900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="Gj1-Jv-Kfu" secondAttribute="centerY" id="Bqe-JX-Fo1"/>
+                                    <constraint firstItem="ztf-Hi-m09" firstAttribute="height" secondItem="e1u-Il-uL0" secondAttribute="height" id="aee-d2-orR"/>
+                                    <constraint firstItem="ztf-Hi-m09" firstAttribute="centerY" secondItem="e1u-Il-uL0" secondAttribute="centerY" id="ifT-s1-BSW"/>
+                                    <constraint firstItem="ztf-Hi-m09" firstAttribute="centerX" secondItem="e1u-Il-uL0" secondAttribute="centerX" id="tG1-P3-kp5"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gj1-Jv-Kfu" secondAttribute="trailing" constant="15" id="wzi-6p-uqE"/>
+                                    <constraint firstItem="ztf-Hi-m09" firstAttribute="width" secondItem="e1u-Il-uL0" secondAttribute="width" id="ywf-eJ-VRN"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="button" destination="ztf-Hi-m09" id="MGH-n7-ZrS"/>
+                                    <outlet property="caret" destination="Gj1-Jv-Kfu" id="AKM-RY-qOf"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mAf-NK-RQ0" userLabel="InformationView" customClass="DashboardButtonView" customModule="Talking_Bible" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="514" width="600" height="85.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avV-gK-LTn" userLabel="InformationButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="85.5"/>
+                                        <accessibility key="accessibilityConfiguration" hint="See help topics" label="Information"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="24"/>
+                                        <color key="tintColor" red="0.92549020049999997" green="0.94117647410000005" blue="0.94509804249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="0.0" maxX="40" maxY="0.0"/>
+                                        <state key="normal" title="Information">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="36"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="HA9-47-1hB" kind="show" identifier="ShowInformationIdentifier" id="T2H-fu-6jj"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Forward" translatesAutoresizingMaskIntoConstraints="NO" id="FNk-gJ-C3Y">
+                                        <rect key="frame" x="563" y="31.5" width="22" height="22"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.56470588235294117" green="0.61568627450980395" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="FNk-gJ-C3Y" secondAttribute="trailing" constant="15" id="HFm-T7-riB"/>
+                                    <constraint firstItem="avV-gK-LTn" firstAttribute="width" secondItem="mAf-NK-RQ0" secondAttribute="width" id="LX5-nT-U0N"/>
+                                    <constraint firstItem="avV-gK-LTn" firstAttribute="centerX" secondItem="mAf-NK-RQ0" secondAttribute="centerX" id="Wqr-6l-dcg"/>
+                                    <constraint firstAttribute="centerY" secondItem="FNk-gJ-C3Y" secondAttribute="centerY" id="a0f-GR-zXC"/>
+                                    <constraint firstItem="avV-gK-LTn" firstAttribute="centerY" secondItem="mAf-NK-RQ0" secondAttribute="centerY" id="b7m-MW-rk4"/>
+                                    <constraint firstItem="avV-gK-LTn" firstAttribute="height" secondItem="mAf-NK-RQ0" secondAttribute="height" id="hXv-gd-teP"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="button" destination="avV-gK-LTn" id="BQB-Lj-oAF"/>
+                                    <outlet property="caret" destination="FNk-gJ-C3Y" id="LO3-Om-CMw"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549020049999997" green="0.94117647410000005" blue="0.94509804249999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="e1u-Il-uL0" secondAttribute="centerX" id="3cV-Ta-Qpr"/>
+                            <constraint firstItem="hd9-K3-Gjp" firstAttribute="top" secondItem="UcQ-UY-YX1" secondAttribute="bottom" constant="10" id="5kz-pI-e6k"/>
+                            <constraint firstItem="YOf-4F-JdY" firstAttribute="bottom" secondItem="e1u-Il-uL0" secondAttribute="top" id="6sh-Tp-udT"/>
+                            <constraint firstItem="YOf-4F-JdY" firstAttribute="width" secondItem="0Zg-rY-ait" secondAttribute="width" id="7dd-yI-str"/>
+                            <constraint firstItem="HI3-yP-HCw" firstAttribute="top" secondItem="mAf-NK-RQ0" secondAttribute="bottom" id="Dyq-my-R6r"/>
+                            <constraint firstItem="hd9-K3-Gjp" firstAttribute="height" secondItem="0Zg-rY-ait" secondAttribute="height" multiplier="1:5" id="Isv-f9-Hev"/>
+                            <constraint firstItem="UcQ-UY-YX1" firstAttribute="top" secondItem="wjA-B6-sJJ" secondAttribute="top" constant="30" id="Jnb-YQ-dgD"/>
+                            <constraint firstItem="mAf-NK-RQ0" firstAttribute="width" secondItem="0Zg-rY-ait" secondAttribute="width" id="Jt9-x6-SXO"/>
+                            <constraint firstItem="mAf-NK-RQ0" firstAttribute="height" secondItem="0Zg-rY-ait" secondAttribute="height" multiplier="1:7" id="NAo-Lv-pbU"/>
+                            <constraint firstAttribute="centerX" secondItem="UcQ-UY-YX1" secondAttribute="centerX" id="Ye0-Q3-cTD"/>
+                            <constraint firstAttribute="width" secondItem="hd9-K3-Gjp" secondAttribute="width" id="a26-hX-9LP"/>
+                            <constraint firstItem="e1u-Il-uL0" firstAttribute="height" secondItem="0Zg-rY-ait" secondAttribute="height" multiplier="1:5" id="a5O-jf-Iij"/>
+                            <constraint firstItem="e1u-Il-uL0" firstAttribute="width" secondItem="0Zg-rY-ait" secondAttribute="width" id="e7L-5z-uuB"/>
+                            <constraint firstAttribute="centerX" secondItem="YOf-4F-JdY" secondAttribute="centerX" id="eKW-uG-tZl"/>
+                            <constraint firstAttribute="centerX" secondItem="mAf-NK-RQ0" secondAttribute="centerX" id="fNq-dA-bbt"/>
+                            <constraint firstItem="YOf-4F-JdY" firstAttribute="height" secondItem="0Zg-rY-ait" secondAttribute="height" multiplier="1:5" id="k2A-AT-qgl"/>
+                            <constraint firstItem="YOf-4F-JdY" firstAttribute="top" secondItem="hd9-K3-Gjp" secondAttribute="bottom" id="seT-X7-lte"/>
+                            <constraint firstAttribute="centerX" secondItem="hd9-K3-Gjp" secondAttribute="centerX" id="v1O-lX-eC4"/>
+                            <constraint firstItem="mAf-NK-RQ0" firstAttribute="top" secondItem="e1u-Il-uL0" secondAttribute="bottom" id="zpc-mZ-Q1m"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Talking Bible" id="zv4-vL-grN"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="continueProgressButton" destination="4tK-CR-eiY" id="Uwr-Nj-3Wl"/>
+                        <outlet property="continueProgressCaret" destination="FNk-gJ-C3Y" id="OlN-Va-jxU"/>
+                        <outlet property="continueProgressView" destination="hd9-K3-Gjp" id="3uE-4L-m90"/>
+                        <outlet property="selectBookButton" destination="ztf-Hi-m09" id="McG-9p-Fur"/>
+                        <outlet property="selectBookCaret" destination="Gj1-Jv-Kfu" id="T4W-3p-Ieu"/>
+                        <outlet property="selectBookView" destination="e1u-Il-uL0" id="so0-A7-keY"/>
+                        <outlet property="selectLanguageButton" destination="V0B-8H-Nv3" id="lHX-li-dTO"/>
+                        <outlet property="selectLanguageView" destination="YOf-4F-JdY" id="Dut-wS-bQv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nB2-iF-X0i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1079" y="-313"/>
+        </scene>
+        <!--Information View Controller-->
+        <scene sceneID="8KR-bi-MIt">
+            <objects>
+                <viewController storyboardIdentifier="TBInformationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HA9-47-1hB" userLabel="Information View Controller" customClass="InformationViewController" customModule="Talking_Bible" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ww7-Ki-sRs"/>
+                        <viewControllerLayoutGuide type="bottom" id="FVA-yh-7VT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fhf-Yt-Xus">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="3w8-qo-6kx">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InformationCellIdentifier" id="Uwn-gb-K5y" customClass="UniversalTableViewCell" customModule="Talking_Bible" customModuleProvider="target">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Uwn-gb-K5y" id="Z9Z-SN-bqP">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="tintColor" red="0.086274512110000007" green="0.62745100259999997" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="xqm-21-wDq" kind="show" identifier="ShowArticleIdentifier" id="nbe-gV-dRj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="HA9-47-1hB" id="nbN-RG-YTG"/>
+                                    <outlet property="delegate" destination="HA9-47-1hB" id="ta6-Rj-N5y"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="3w8-qo-6kx" secondAttribute="centerY" id="CN2-Eh-1QV"/>
+                            <constraint firstItem="ww7-Ki-sRs" firstAttribute="top" secondItem="3w8-qo-6kx" secondAttribute="top" id="U9F-rH-MT3"/>
+                            <constraint firstAttribute="centerX" secondItem="3w8-qo-6kx" secondAttribute="centerX" id="jgu-7e-jwa"/>
+                            <constraint firstAttribute="height" secondItem="3w8-qo-6kx" secondAttribute="height" id="kDE-Rv-csR"/>
+                            <constraint firstItem="3w8-qo-6kx" firstAttribute="width" secondItem="Fhf-Yt-Xus" secondAttribute="width" id="qXy-XL-4nJ"/>
+                            <constraint firstItem="3w8-qo-6kx" firstAttribute="height" secondItem="Fhf-Yt-Xus" secondAttribute="height" id="zJ8-q4-gky"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="zJ8-q4-gky"/>
+                                <exclude reference="U9F-rH-MT3"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Information" id="KrV-y7-Krw"/>
+                    <connections>
+                        <outlet property="tableView" destination="3w8-qo-6kx" id="Nko-EV-aUj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="595-vX-Qiw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-380" y="397"/>
+        </scene>
+        <!--Article Web View Controller-->
+        <scene sceneID="O3b-H1-fcu">
+            <objects>
+                <viewController id="xqm-21-wDq" userLabel="Article Web View Controller" customClass="ArticleWebViewController" customModule="Talking_Bible" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h5A-n0-HUg"/>
+                        <viewControllerLayoutGuide type="bottom" id="4W2-yz-c00"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eXh-wK-9Yr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Sv-oG-Gcc">
+                                <rect key="frame" x="0.0" y="20" width="600" height="505"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86Y-lh-BHT">
+                                <rect key="frame" x="0.0" y="525" width="600" height="75"/>
+                                <color key="backgroundColor" red="0.16078431900000001" green="0.50196081400000003" blue="0.7254902124" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.92549020049999997" green="0.94117647410000005" blue="0.94509804249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="27"/>
+                                </variation>
+                                <connections>
+                                    <action selector="bottomButtonPressed:" destination="xqm-21-wDq" eventType="touchUpInside" id="gFN-T8-0bR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="86Y-lh-BHT" firstAttribute="width" secondItem="eXh-wK-9Yr" secondAttribute="width" id="BWF-V2-SFs"/>
+                            <constraint firstItem="4W2-yz-c00" firstAttribute="top" secondItem="86Y-lh-BHT" secondAttribute="bottom" id="EqG-ds-5bM"/>
+                            <constraint firstItem="3Sv-oG-Gcc" firstAttribute="bottom" secondItem="86Y-lh-BHT" secondAttribute="top" placeholder="YES" id="K8n-dv-9kU"/>
+                            <constraint firstAttribute="centerX" secondItem="3Sv-oG-Gcc" secondAttribute="centerX" id="eGx-gt-ie3"/>
+                            <constraint firstItem="3Sv-oG-Gcc" firstAttribute="top" secondItem="h5A-n0-HUg" secondAttribute="bottom" id="gwQ-Qf-Cee"/>
+                            <constraint firstItem="86Y-lh-BHT" firstAttribute="height" secondItem="eXh-wK-9Yr" secondAttribute="height" multiplier="1:8" id="idZ-4F-eQd"/>
+                            <constraint firstAttribute="width" secondItem="3Sv-oG-Gcc" secondAttribute="width" id="nyh-Po-I6q"/>
+                            <constraint firstItem="86Y-lh-BHT" firstAttribute="top" secondItem="3Sv-oG-Gcc" secondAttribute="bottom" id="wQP-yd-ZFr"/>
+                            <constraint firstAttribute="centerX" secondItem="86Y-lh-BHT" secondAttribute="centerX" id="zVR-uX-37x"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="wQP-yd-ZFr"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Information" id="Rcn-7z-X0r"/>
+                    <connections>
+                        <outlet property="bottomButton" destination="86Y-lh-BHT" id="X0F-GE-LVV"/>
+                        <outlet property="webView" destination="3Sv-oG-Gcc" id="ZQW-JB-jLK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PC3-Qd-6Bs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="330" y="400"/>
+        </scene>
+        <!--Language Table View Controller-->
+        <scene sceneID="CLZ-YZ-rHa">
+            <objects>
+                <tableViewController storyboardIdentifier="TBLanguageTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XD3-qS-e7v" userLabel="Language Table View Controller" customClass="LanguageTableViewController" customModule="Talking_Bible" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hIl-it-JRT">
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="192-ce-VjU">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="XD3-qS-e7v" id="aNt-J7-16P"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LanguageCellIdentifier" id="Gxr-Zn-jIt" customClass="UniversalTableViewCell" customModule="Talking_Bible" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gxr-Zn-jIt" id="Tah-Xc-tSo">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="tintColor" red="0.086274512112140656" green="0.62745100259780884" blue="0.5215686559677124" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XD3-qS-e7v" id="wMB-PA-uRz"/>
+                            <outlet property="delegate" destination="XD3-qS-e7v" id="ljg-po-JUD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Languages" id="W2U-mX-7Xb"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="AVu-GG-pos" id="L9X-2Z-IlQ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JQ9-LT-4qi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="AVu-GG-pos">
+                    <connections>
+                        <outlet property="delegate" destination="XD3-qS-e7v" id="zu9-WL-ZjH"/>
+                        <outlet property="searchBar" destination="192-ce-VjU" id="tIB-9P-uZO"/>
+                        <outlet property="searchContentsController" destination="XD3-qS-e7v" id="hH7-DP-hu9"/>
+                        <outlet property="searchResultsDataSource" destination="XD3-qS-e7v" id="blw-p4-OWL"/>
+                        <outlet property="searchResultsDelegate" destination="XD3-qS-e7v" id="Qpc-ce-du6"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-380" y="-986"/>
+        </scene>
+        <!--Book Table View Controller-->
+        <scene sceneID="VUW-6T-k01">
+            <objects>
+                <tableViewController storyboardIdentifier="TBBookTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0KU-Od-Khg" userLabel="Book Table View Controller" customClass="BookTableViewController" customModule="Talking_Bible" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="imP-pp-cqr">
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="tintColor" red="0.086274512112140656" green="0.62745100259780884" blue="0.5215686559677124" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookCellIdentifier" id="ycZ-bQ-i2F" customClass="UniversalTableViewCell" customModule="Talking_Bible" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ycZ-bQ-i2F" id="LZ5-Vg-gbv">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="xM2-B7-EFe" kind="show" identifier="ShowBookIdentifier" id="qsE-Fe-ZmF"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0KU-Od-Khg" id="yC8-4F-icP"/>
+                            <outlet property="delegate" destination="0KU-Od-Khg" id="Uoy-Xn-4xn"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Books" id="avI-7V-2D4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8WN-sE-QZp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-380" y="-314"/>
+        </scene>
+        <!--Book Detail View Controller-->
+        <scene sceneID="Jcr-gv-DKB">
+            <objects>
+                <viewController storyboardIdentifier="TBBookDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xM2-B7-EFe" userLabel="Book Detail View Controller" customClass="BookDetailViewController" customModule="Talking_Bible" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JIX-DR-GSi"/>
+                        <viewControllerLayoutGuide type="bottom" id="UiC-wH-Gc3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T6X-vQ-a4u">
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gl0-YV-e3u" userLabel="Player Controls" customClass="PlayerControls" customModule="Talking_Bible" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="400" width="600" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuU-I0-Og2" userLabel="Play">
+                                        <rect key="frame" x="200" y="66" width="200" height="133.5"/>
+                                        <color key="backgroundColor" red="0.086274512112140656" green="0.62745100259780884" blue="0.5215686559677124" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" label="Toggle playing"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="tintColor" red="0.92549020049999997" green="0.94117647410000005" blue="0.94509804249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="imageEdgeInsets" minX="13" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="Play"/>
+                                        <state key="disabled" image="Play"/>
+                                        <state key="selected" image="PlayFilled"/>
+                                        <state key="highlighted" image="PlayFilled"/>
+                                        <connections>
+                                            <action selector="playButtonPressed:" destination="gl0-YV-e3u" eventType="touchUpInside" id="SYl-95-DlA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4f-PK-smw" userLabel="Next">
+                                        <rect key="frame" x="400" y="66" width="200" height="133.5"/>
+                                        <color key="backgroundColor" red="0.10196078568696976" green="0.73725491762161255" blue="0.61176472902297974" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Selects the next chapter" label="Next chapter"/>
+                                        <color key="tintColor" red="0.92549020049999997" green="0.94117647410000005" blue="0.94509804249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="FastForward"/>
+                                        <state key="selected" image="FastForwardFilled"/>
+                                        <state key="highlighted" image="FastForwardFilled"/>
+                                        <connections>
+                                            <action selector="nextButtonPressed:" destination="gl0-YV-e3u" eventType="touchUpInside" id="OV6-gq-5fM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6V-lz-0Ke" userLabel="Previous">
+                                        <rect key="frame" x="0.0" y="66" width="200" height="133.5"/>
+                                        <color key="backgroundColor" red="0.10196078568696976" green="0.73725491762161255" blue="0.61176472902297974" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Selects the previous chapter or skips to beginning of the chapter" label="Previous chapter"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="tintColor" red="0.92549020051956177" green="0.94117647409439087" blue="0.94509804248809814" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="Rewind">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="RewindFilled"/>
+                                        <state key="highlighted" image="RewindFilled"/>
+                                        <connections>
+                                            <action selector="previousButtonPressed:" destination="gl0-YV-e3u" eventType="touchUpInside" id="Vuo-TK-lwB"/>
+                                        </connections>
+                                    </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="guD-Hu-csi">
+                                        <rect key="frame" x="14" y="0.0" width="513" height="67.5"/>
+                                        <accessibility key="accessibilityConfiguration" label="Chapter progress">
+                                            <accessibilityTraits key="traits" none="YES" updatesFrequently="YES"/>
+                                        </accessibility>
+                                        <connections>
+                                            <action selector="progressSliderChanged:forEvent:" destination="gl0-YV-e3u" eventType="valueChanged" id="eXT-4U-4wa"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajG-Or-as7" userLabel="Remaining Time">
+                                        <rect key="frame" x="541" y="21" width="43" height="25"/>
+                                        <accessibility key="accessibilityConfiguration" label="">
+                                            <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92549020051956177" green="0.94117647409439087" blue="0.94509804248809814" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="K4f-PK-smw" firstAttribute="width" secondItem="DuU-I0-Og2" secondAttribute="width" id="4l4-J4-kZk"/>
+                                    <constraint firstItem="DuU-I0-Og2" firstAttribute="centerY" secondItem="t6V-lz-0Ke" secondAttribute="centerY" id="7ag-2O-TFy"/>
+                                    <constraint firstAttribute="centerX" secondItem="DuU-I0-Og2" secondAttribute="centerX" id="7op-hC-H3l"/>
+                                    <constraint firstItem="K4f-PK-smw" firstAttribute="height" secondItem="DuU-I0-Og2" secondAttribute="height" id="81V-YJ-Qke"/>
+                                    <constraint firstItem="DuU-I0-Og2" firstAttribute="height" secondItem="t6V-lz-0Ke" secondAttribute="height" id="CVe-K0-Fip"/>
+                                    <constraint firstItem="guD-Hu-csi" firstAttribute="leading" secondItem="gl0-YV-e3u" secondAttribute="leading" constant="16" id="MPX-63-FB2"/>
+                                    <constraint firstItem="guD-Hu-csi" firstAttribute="centerY" secondItem="ajG-Or-as7" secondAttribute="centerY" id="Srj-1c-Gs0"/>
+                                    <constraint firstItem="K4f-PK-smw" firstAttribute="centerY" secondItem="DuU-I0-Og2" secondAttribute="centerY" id="WEZ-vM-a4w"/>
+                                    <constraint firstAttribute="width" secondItem="DuU-I0-Og2" secondAttribute="width" multiplier="3:1" id="ZBL-Gj-Gdp"/>
+                                    <constraint firstAttribute="bottom" secondItem="DuU-I0-Og2" secondAttribute="bottom" id="ff4-BV-dp3"/>
+                                    <constraint firstItem="DuU-I0-Og2" firstAttribute="width" secondItem="t6V-lz-0Ke" secondAttribute="width" id="gND-vG-JeG"/>
+                                    <constraint firstItem="ajG-Or-as7" firstAttribute="leading" secondItem="guD-Hu-csi" secondAttribute="trailing" constant="16" id="gen-Ik-JpU"/>
+                                    <constraint firstItem="K4f-PK-smw" firstAttribute="leading" secondItem="DuU-I0-Og2" secondAttribute="trailing" id="rxo-qD-bRN"/>
+                                    <constraint firstItem="DuU-I0-Og2" firstAttribute="leading" secondItem="t6V-lz-0Ke" secondAttribute="trailing" id="tvR-Ku-3q9"/>
+                                    <constraint firstAttribute="trailing" secondItem="ajG-Or-as7" secondAttribute="trailing" constant="16" id="uUB-eY-P8B"/>
+                                    <constraint firstAttribute="height" secondItem="guD-Hu-csi" secondAttribute="height" multiplier="3:1" id="x9w-AQ-80B"/>
+                                    <constraint firstItem="guD-Hu-csi" firstAttribute="top" secondItem="gl0-YV-e3u" secondAttribute="top" id="ydU-CV-C2j"/>
+                                    <constraint firstAttribute="height" secondItem="DuU-I0-Og2" secondAttribute="height" multiplier="3:2" id="zlg-C2-cOL"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="nextButton" destination="K4f-PK-smw" id="ljw-He-EgY"/>
+                                    <outlet property="playButton" destination="DuU-I0-Og2" id="Yjx-zb-LNj"/>
+                                    <outlet property="previousButton" destination="t6V-lz-0Ke" id="dXn-7i-Ziq"/>
+                                    <outlet property="progressSlider" destination="guD-Hu-csi" id="VKr-Eq-F8X"/>
+                                    <outlet property="remainingTimeLabel" destination="ajG-Or-as7" id="Fad-5n-jDN"/>
+                                </connections>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="lDA-Ys-U1o" userLabel="Chapter Table">
+                                <rect key="frame" x="0.0" y="64" width="600" height="336"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.086274512110000007" green="0.62745100259999997" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChapterCellIdentifier" id="096-sc-b02" customClass="UniversalTableViewCell" customModule="Talking_Bible" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="096-sc-b02" id="thO-pI-2Hk">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="tintColor" red="0.086274512110000007" green="0.62745100259999997" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="xM2-B7-EFe" id="PuI-J6-Wxl"/>
+                                    <outlet property="delegate" destination="xM2-B7-EFe" id="mGO-FD-cMy"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89411765336990356" green="0.89411765336990356" blue="0.89411765336990356" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lDA-Ys-U1o" firstAttribute="leading" secondItem="T6X-vQ-a4u" secondAttribute="leadingMargin" id="2tA-I9-1Ii"/>
+                            <constraint firstItem="UiC-wH-Gc3" firstAttribute="top" secondItem="gl0-YV-e3u" secondAttribute="bottom" id="3XQ-Kk-5Do"/>
+                            <constraint firstItem="gl0-YV-e3u" firstAttribute="width" secondItem="T6X-vQ-a4u" secondAttribute="width" id="Ho7-fR-oLj"/>
+                            <constraint firstItem="gl0-YV-e3u" firstAttribute="top" secondItem="lDA-Ys-U1o" secondAttribute="bottom" constant="15" id="JXh-ev-BCe"/>
+                            <constraint firstAttribute="centerX" secondItem="lDA-Ys-U1o" secondAttribute="centerX" id="NTY-wI-Ay3"/>
+                            <constraint firstAttribute="centerX" secondItem="gl0-YV-e3u" secondAttribute="centerX" id="Rlf-gm-qkD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lDA-Ys-U1o" secondAttribute="trailing" id="S30-Zg-1uY"/>
+                            <constraint firstItem="gl0-YV-e3u" firstAttribute="height" secondItem="T6X-vQ-a4u" secondAttribute="height" multiplier="1:3" id="Xi5-wk-IQl"/>
+                            <constraint firstAttribute="width" secondItem="lDA-Ys-U1o" secondAttribute="width" id="aWR-Oe-obr"/>
+                            <constraint firstItem="JIX-DR-GSi" firstAttribute="top" secondItem="lDA-Ys-U1o" secondAttribute="top" constant="-64" id="ahV-Rv-o5p"/>
+                            <constraint firstItem="gl0-YV-e3u" firstAttribute="height" secondItem="T6X-vQ-a4u" secondAttribute="height" multiplier="3:1" id="fF2-zm-Hlm"/>
+                            <constraint firstItem="lDA-Ys-U1o" firstAttribute="top" secondItem="JIX-DR-GSi" secondAttribute="bottom" id="mLt-Vf-lnA"/>
+                            <constraint firstItem="gl0-YV-e3u" firstAttribute="top" secondItem="lDA-Ys-U1o" secondAttribute="bottom" id="qnq-EP-d3l"/>
+                            <constraint firstAttribute="height" secondItem="lDA-Ys-U1o" secondAttribute="height" multiplier="3:2" id="t9m-wq-cwi"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ahV-Rv-o5p"/>
+                                <exclude reference="2tA-I9-1Ii"/>
+                                <exclude reference="S30-Zg-1uY"/>
+                                <exclude reference="t9m-wq-cwi"/>
+                                <exclude reference="JXh-ev-BCe"/>
+                                <exclude reference="fF2-zm-Hlm"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="FgG-Ft-art">
+                        <barButtonItem key="rightBarButtonItem" image="Upload" id="1aw-Pw-3rd">
+                            <connections>
+                                <action selector="rightBarButtonPressed:" destination="xM2-B7-EFe" id="hNF-6f-6ya"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="chapterTableView" destination="lDA-Ys-U1o" id="tCL-VZ-Fnf"/>
+                        <outlet property="playerControls" destination="gl0-YV-e3u" id="bru-tb-OVk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZNl-sh-fD7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="267" y="-314"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bug" width="175" height="150"/>
+        <image name="FastForward" width="100" height="100"/>
+        <image name="FastForwardFilled" width="100" height="100"/>
+        <image name="Forward" width="22" height="22"/>
+        <image name="Play" width="100" height="100"/>
+        <image name="PlayFilled" width="100" height="100"/>
+        <image name="Rewind" width="100" height="100"/>
+        <image name="RewindFilled" width="100" height="100"/>
+        <image name="Upload" width="22" height="22"/>
+    </resources>
+</document>

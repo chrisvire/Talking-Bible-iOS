@@ -1,0 +1,17 @@
+{
+  "images" : [
+    {
+      "idiom" : "iphone",
+      "filename" : "fast_forward.pdf"
+    },
+    {
+      "idiom" : "ipad",
+      "filename" : "fast_forward-1.pdf"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode",
+    "template-rendering-intent" : "template"
+  }
+}

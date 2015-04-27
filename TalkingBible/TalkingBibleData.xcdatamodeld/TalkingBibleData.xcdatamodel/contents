@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14B25" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Book" representedClassName="Book" syncable="YES">
+        <attribute name="bookId" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="englishName" attributeType="String" syncable="YES"/>
+        <attribute name="position" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="chapters" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Chapter" inverseName="book" inverseEntity="Chapter" syncable="YES"/>
+        <relationship name="collection" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Collection" inverseName="books" inverseEntity="Collection" syncable="YES"/>
+    </entity>
+    <entity name="Chapter" representedClassName="Chapter" syncable="YES">
+        <attribute name="englishName" attributeType="String" syncable="YES"/>
+        <attribute name="mp3" attributeType="String" syncable="YES"/>
+        <attribute name="position" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <relationship name="book" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="chapters" inverseEntity="Book" syncable="YES"/>
+    </entity>
+    <entity name="Collection" representedClassName="Collection" syncable="YES">
+        <attribute name="collectionId" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="copyright" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="englishName" attributeType="String" syncable="YES"/>
+        <attribute name="position" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="books" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Book" inverseName="collection" inverseEntity="Book" syncable="YES"/>
+        <relationship name="language" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Language" inverseName="collections" inverseEntity="Language" syncable="YES"/>
+    </entity>
+    <entity name="Language" representedClassName="Language" syncable="YES">
+        <attribute name="englishName" attributeType="String" syncable="YES"/>
+        <attribute name="languageId" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="collections" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Collection" inverseName="language" inverseEntity="Collection" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Book" positionX="54" positionY="18" width="128" height="120"/>
+        <element name="Chapter" positionX="214" positionY="27" width="128" height="105"/>
+        <element name="Collection" positionX="-99" positionY="26" width="128" height="148"/>
+        <element name="Language" positionX="-261" positionY="18" width="128" height="88"/>
+    </elements>
+</model>

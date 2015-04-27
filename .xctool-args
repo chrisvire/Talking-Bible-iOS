@@ -1,0 +1,4 @@
+[
+  "-workspace", "TalkingBible.xcworkspace",
+  "-scheme", "TalkingBible"
+]

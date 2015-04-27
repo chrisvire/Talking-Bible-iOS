@@ -1,0 +1,63 @@
+
+/* Class = "UIButton"; accessibilityHint = "Returns to the most recently heard book"; ObjectID = "4tK-CR-eiY"; */
+"4tK-CR-eiY.accessibilityHint" = "Returns to the most recently heard book";
+
+/* Class = "UIButton"; accessibilityLabel = "Continue listening"; ObjectID = "4tK-CR-eiY"; */
+"4tK-CR-eiY.accessibilityLabel" = "Continue listening";
+
+/* Class = "UIButton"; accessibilityLabel = "Toggle playing"; ObjectID = "DuU-I0-Og2"; */
+"DuU-I0-Og2.accessibilityLabel" = "Toggle playing";
+
+/* Class = "UIButton"; accessibilityHint = "Selects the next chapter"; ObjectID = "K4f-PK-smw"; */
+"K4f-PK-smw.accessibilityHint" = "Selects the next chapter";
+
+/* Class = "UIButton"; accessibilityLabel = "Next chapter"; ObjectID = "K4f-PK-smw"; */
+"K4f-PK-smw.accessibilityLabel" = "Next chapter";
+
+/* Class = "UINavigationItem"; title = "Information"; ObjectID = "KrV-y7-Krw"; */
+"KrV-y7-Krw.title" = "Information";
+
+/* Class = "UINavigationItem"; title = "Information"; ObjectID = "Rcn-7z-X0r"; */
+"Rcn-7z-X0r.title" = "Information";
+
+/* Class = "UIButton"; accessibilityHint = "Displays the list of languages"; ObjectID = "V0B-8H-Nv3"; */
+"V0B-8H-Nv3.accessibilityHint" = "Displays the list of languages";
+
+/* Class = "UIButton"; accessibilityLabel = "Select a language"; ObjectID = "V0B-8H-Nv3"; */
+"V0B-8H-Nv3.accessibilityLabel" = "Select a language";
+
+/* Class = "UINavigationItem"; title = "Languages"; ObjectID = "W2U-mX-7Xb"; */
+"W2U-mX-7Xb.title" = "Languages";
+
+/* Class = "UILabel"; text = "-00:00"; ObjectID = "ajG-Or-as7"; */
+"ajG-Or-as7.text" = "-00:00";
+
+/* Class = "UINavigationItem"; title = "Books"; ObjectID = "avI-7V-2D4"; */
+"avI-7V-2D4.title" = "Books";
+
+/* Class = "UIButton"; accessibilityHint = "See help topics"; ObjectID = "avV-gK-LTn"; */
+"avV-gK-LTn.accessibilityHint" = "See help topics";
+
+/* Class = "UIButton"; accessibilityLabel = "Information"; ObjectID = "avV-gK-LTn"; */
+"avV-gK-LTn.accessibilityLabel" = "Information";
+
+/* Class = "UIButton"; normalTitle = "Information"; ObjectID = "avV-gK-LTn"; */
+"avV-gK-LTn.normalTitle" = "Information";
+
+/* Class = "UISlider"; accessibilityLabel = "Chapter progress"; ObjectID = "guD-Hu-csi"; */
+"guD-Hu-csi.accessibilityLabel" = "Chapter progress";
+
+/* Class = "UIButton"; accessibilityHint = "Selects the previous chapter or skips to beginning of the chapter"; ObjectID = "t6V-lz-0Ke"; */
+"t6V-lz-0Ke.accessibilityHint" = "Selects the previous chapter or skips to beginning of the chapter";
+
+/* Class = "UIButton"; accessibilityLabel = "Previous chapter"; ObjectID = "t6V-lz-0Ke"; */
+"t6V-lz-0Ke.accessibilityLabel" = "Previous chapter";
+
+/* Class = "UIButton"; accessibilityHint = "Returns to the most recently heard book"; ObjectID = "ztf-Hi-m09"; */
+"ztf-Hi-m09.accessibilityHint" = "Returns to the most recently heard book";
+
+/* Class = "UIButton"; accessibilityLabel = "Continue listening"; ObjectID = "ztf-Hi-m09"; */
+"ztf-Hi-m09.accessibilityLabel" = "Continue listening";
+
+/* Class = "UINavigationItem"; title = "Talking Bible"; ObjectID = "zv4-vL-grN"; */
+"zv4-vL-grN.title" = "Talking Bible";

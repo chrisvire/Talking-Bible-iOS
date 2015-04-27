@@ -1,0 +1,83 @@
+/*
+  Localizable.strings
+  TalkingBible
+
+  Created by Clay Smith on 1/21/15.
+  Copyright (c) 2015 Talking Bibles International. All rights reserved.
+*/
+
+"Chinese"       = "中国";
+"Bible"         = "圣经";
+"Chapter"       = "章节";
+
+// Old Testament
+"Old Testament" = "旧约全书";
+"Genesis"       = "创世纪";
+"Exodus"        = "出埃及记";
+"Leviticus"     = "利未记";
+"Numbers"       = "号码";
+"Deuteronomy"   = "申命记";
+"Joshua"        = "约书亚记";
+"Judges"        = "士师记";
+"Ruth"          = "路得记";
+"1 Samuel"      = "撒母耳记上";
+"2 Samuel"      = "撒母耳记下";
+"1 Kings"       = "列王纪上";
+"2 Kings"       = "列王纪下";
+"1 Chronicles"  = "历代志上";
+"2 Chronicles"  = "历代志下";
+"Ezra"          = "以斯拉记";
+"Nehemiah"      = "尼希米记";
+"Esther"        = "以斯帖记";
+"Job"           = "约伯记";
+"Psalms"        = "诗篇";
+"Proverbs"      = "箴言";
+"Ecclesiastes"  = "传道书";
+"Song of Songs" = "雅歌";
+"Isaiah"        = "以赛亚书";
+"Jeremiah"      = "耶利米书";
+"Lamentations"  = "耶利米哀歌";
+"Ezekiel"       = "以西结书";
+"Daniel"        = "但以理书";
+"Hosea"         = "何西阿书";
+"Joel"          = "约珥书";
+"Amos"          = "阿摩司书";
+"Obadiah"       = "俄巴底亚书";
+"Jonah"         = "约拿书";
+"Micah"         = "弥迦书";
+"Nahum"         = "那鸿书";
+"Habakkuk"      = "哈巴谷书";
+"Zephaniah"     = "西番雅书";
+"Haggai"        = "哈该书";
+"Zechariah"     = "撒迦利亚书";
+"Malachi"       = "玛拉基书";
+
+// New Testament
+"New Testament"     = "新约全书";
+"Matthew"           = "马太福音";
+"Mark"              = "马可福音";
+"Luke"              = "路加福音";
+"John"              = "约翰福音";
+"Acts"              = "使徒行传";
+"Romans"            = "罗马书";
+"1 Corinthians"     = "哥林多前书";
+"2 Corinthians"     = "哥林多后书";
+"Galatians"         = "加拉太书";
+"Ephesians"         = "以弗所书";
+"Philippians"       = "腓立比书";
+"Colossians"        = "歌罗西书";
+"1 Thessalonians"   = "帖撒罗尼迦前书";
+"2 Thessalonians"   = "帖撒罗尼迦后书";
+"1 Timothy"         = "提摩太前书";
+"2 Timothy"         = "提摩太后书";
+"Titus"             = "提多书";
+"Philemon"          = "腓利门书";
+"Hebrews"           = "希伯来书";
+"James"             = "雅各书";
+"1 Peter"           = "彼得前书";
+"2 Peter"           = "彼得后书";
+"1 John"            = "约翰一书";
+"2 John"            = "约翰二书";
+"3 John"            = "约翰三书";
+"Jude"              = "犹大书";
+"Revelation"        = "启示录";

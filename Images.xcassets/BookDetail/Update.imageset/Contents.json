@@ -1,0 +1,17 @@
+{
+  "images" : [
+    {
+      "idiom" : "iphone",
+      "filename" : "update.pdf"
+    },
+    {
+      "idiom" : "ipad",
+      "filename" : "update-1.pdf"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode",
+    "template-rendering-intent" : "template"
+  }
+}

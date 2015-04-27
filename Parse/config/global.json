@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "Talking Bible": {
+            "applicationId": "WEE0dW1vjwRSNkVpM6FAcsFnthCqoFyddm004ubt", 
+            "masterKey": "cNUZZt9AeC5N7fShIO3naFmCWORJMhDdYUMGK8Z6"
+        }, 
+        "_default": {
+            "link": "Talking Bible"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.4"
+    }
+}

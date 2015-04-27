@@ -1,0 +1,230 @@
+//
+//  Copyright 2015 Talking Bibles International
+//
+//  Licensed under the Apache License, Version 2.0 (the "License");
+//  you may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at
+//
+//  http://www.apache.org/licenses/LICENSE-2.0
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+//
+
+"Bible"         = "Bible";
+"Chapter"       = "Chapitre";
+"Language"      = "Langue";
+"Book"          = "Livre";
+
+// Old Testament
+"Old Testament" = "l'Ancien Testament";
+"Genesis"       = "Genèse";
+"Exodus"        = "Exode";
+"Leviticus"     = "Lévitique";
+"Numbers"       = "Nombres";
+"Deuteronomy"   = "Deutéronome";
+"Joshua"        = "Joshua";
+"Judges"        = "Juges";
+"Ruth"          = "Ruth";
+"1 Samuel"      = "1 Samuel";
+"2 Samuel"      = "2 Samuel";
+"1 Kings"       = "1 Rois";
+"2 Kings"       = "2 Rois";
+"1 Chronicles"  = "1 Chroniques";
+"2 Chronicles"  = "2 Chroniques";
+"Ezra"          = "Ezra";
+"Nehemiah"      = "Néhémie";
+"Esther"        = "Esther";
+"Job"           = "Job";
+"Psalms"        = "Psaumes";
+"Proverbs"      = "Proverbes";
+"Ecclesiastes"  = "Ecclésiaste";
+"Song of Songs" = "Cantique des Cantiques";
+"Isaiah"        = "Isaïe";
+"Jeremiah"      = "Jérémie";
+"Lamentations"  = "Lamentations";
+"Ezekiel"       = "Ezekiel";
+"Daniel"        = "Daniel";
+"Hosea"         = "Osée";
+"Joel"          = "Joel";
+"Amos"          = "Amos";
+"Obadiah"       = "Abdias";
+"Jonah"         = "Jonah";
+"Micah"         = "Micah";
+"Nahum"         = "Nahum";
+"Habakkuk"      = "Habacuc";
+"Zephaniah"     = "Zephaniah";
+"Haggai"        = "Aggée";
+"Zechariah"     = "Zacharie";
+"Malachi"       = "Malachie";
+
+// New Testament
+"New Testament"     = "le Nouveau Testament";
+"Matthew"           = "Matthieu";
+"Mark"              = "Marc";
+"Luke"              = "Luc";
+"John"              = "Jean";
+"Acts"              = "Actes";
+"Romans"            = "Romanis";
+"1 Corinthians"     = "1 Corinthiens";
+"2 Corinthians"     = "2 Corinthiens";
+"Galatians"         = "Galates";
+"Ephesians"         = "Éphésiens";
+"Philippians"       = "Philippiens";
+"Colossians"        = "Colossiens";
+"1 Thessalonians"   = "1 Thessaloniciens";
+"2 Thessalonians"   = "2 Thessaloniciens";
+"1 Timothy"         = "1 Timothée";
+"2 Timothy"         = "2 Timothée";
+"Titus"             = "Tite";
+"Philemon"          = "Philémon";
+"Hebrews"           = "Hébreux";
+"James"             = "Jacques";
+"1 Peter"           = "1 Pierre";
+"2 Peter"           = "2 Pierre";
+"1 John"            = "1 Jean";
+"2 John"            = "2 Jean";
+"3 John"            = "3 Jean";
+"Jude"              = "Jude";
+"Revelation"        = "Apocalypse";
+
+// XLForm Hack
+"XLFormViewController_ValidationErrorTitle" = "Oops!";
+"XLFormController_DeleteConfirmation" = "Êtes-vous sûr?";
+
+// UI
+"Donate by Credit Card"   = "Faire un don en ligne";
+"Report a Problem"  = "Signaler un problème";
+
+// Languages
+"Akha"                                     = "Akha";
+"Albanian"                                 = "Albanaise";
+"Albanian, Gheg"                           = "Albanaise Gheg";
+"Amharic"                                  = "Amharique";
+"Amuzgo de Guerrero"                       = "Amuzgo de Guerrero";
+"Anuak"                                    = "Anuak";
+"Arabic"                                   = "Arabe";
+"Arabic, Egyptian"                         = "Arabe égyptien";
+"Assamese"                                 = "Assamais";
+"Assyrian Neo-Aramaic"                     = "Assyrien néo-araméen";
+"Badaga"                                   = "Badaga";
+"Bengali"                                  = "Bengali";
+"Blackfoot"                                = "Pied-noir";
+"Bo (Laos)"                                = "Bo de Laos";
+"Borana"                                   = "Borana";
+"Cantonese"                                = "Cantonais";
+"Chatino, Nopala"                          = "Chatino de Nopala";
+"Chatino, Western Highland"                = "Chatino des Montagnes Occidentales";
+"Chatino, Yolotepec-Lachao"                = "Chatino de Yolotepec-Lachao";
+"Chinantec, Lalana"                        = "Chinantèques de Lalana";
+"Chinantec, Lealao"                        = "Chinantèques de Lealao";
+"Chinantec, Palantla"                      = "Chinantèques de Palantla";
+"Chinese, Hakka"                           = "Chinois du Hakka";
+"Chinese, Mandarin"                        = "Chinois mandarin";
+"Chinese, Min Dong"                        = "Chinois du Min Dong";
+"Chinese, Min Nan (Hokkien)"               = "Chinois du Min Nan (Hokkien)";
+"Chinese, Min Nan (Teochew)"               = "Chinois du Min Nan (Teochew)";
+"Czech"                                    = "Tchèque";
+"Dinka, Southeastern"                      = "Dinka du Sud-Est";
+"Dusun, Central"                           = "Dusun du Sud-Central";
+"Dutch"                                    = "Néerlandais";
+"English"                                  = "Anglais";
+"Éwé"                                      = "Éwé";
+"Gondi"                                    = "Gondi";
+"Greek"                                    = "Grecque";
+"Haitian Creole"                           = "Créole haïtien";
+"Hausa"                                    = "Hausa";
+"Hebrew"                                   = "Hébreu";
+"Hindi"                                    = "Hindi";
+"Hmong Njua"                               = "Hmong Njua";
+"Huichol"                                  = "Huichol";
+"Ilongot"                                  = "Ilongot";
+"Italian"                                  = "Italien";
+"Iu Mien"                                  = "Iu Mien";
+"Javanese"                                 = "Javanais";
+"Khmer, Central"                           = "Khmer";
+"Khmer, Northern"                          = "Khmer Surin";
+"Kinyarwanda"                              = "Kinyarwanda";
+"Kiswahili"                                = "Kiswahili";
+"Kituba"                                   = "Kituba";
+"Krio"                                     = "Krio";
+"Lhomi"                                    = "Lhomi";
+"Lingala"                                  = "Lingala";
+"Maasai"                                   = "Maasai";
+"Macedonian"                               = "Macédonien";
+"Majangir"                                 = "Majangir";
+"Malayalam"                                = "Malayalam";
+"Marathi"                                  = "Marathi";
+"Mawchi"                                   = "Mawchi";
+"Mayo"                                     = "Mayo";
+"Mazatec, Ayautla"                         = "Mazatèque de Ayautla";
+"Mazatec, Chiquihuitlán"                   = "Mazatèque de Chiquihuitlán";
+"Mazatec, Huautla"                         = "Mazatèque de Huautla";
+"Mazatec, Jalapa de Díaz"                  = "Mazatèque de Jalapa de Díaz";
+"Me’phaa, Malinaltepec"                    = "Mazatèque de Malinaltepec";
+"Mixe, Coatlán"                            = "Mixe de Coatlán";
+"Mixe, Isthmus"                            = "Mixe de l'isthme";
+"Mixe, Juquila"                            = "Mixe de Juquila";
+"Mixe, North Central"                      = "Mixe du centre-nord";
+"Mixe, Totontepec"                         = "Mixe de Totontepec";
+"Mixtec, Alacatlatzala"                    = "Mixtèque de Alacatlatzala";
+"Mixtec, Alcozauca"                        = "Mixtèque de Alcozauca";
+"Mixtec, Amoltepec"                        = "Mixtèque de Amoltepec";
+"Mixtec, Chayuco"                          = "Mixtèque de Chayuco";
+"Mixtec, Coatzospan"                       = "Mixtèque de Coatzospan";
+"Mixtec, Jamiltepec"                       = "Mixtèque de Jamiltepec";
+"Mixtec, Magdalena Peñasco"                = "Mixtèque de Magdalena Peñasco";
+"Mixtec, Metlatónoc"                       = "Mixtèque de Metlatónoc";
+"Mixtec, Michoacán"                        = "Mixtèque de Michoacán";
+"Mixtec, Mixtepec"                         = "Mixtèque de Mixtepec";
+"Mixtec, Nochixtlán"                       = "Mixtèque de Nochixtlán";
+"Mixtec, Northern Tlaxiaco"                = "Mixtèque de Tlaxiaco Nord";
+"Mixtec, Ocotepec"                         = "Mixtèque de Ocotepec";
+"Mixtec, Peñoles"                          = "Mixtèque de Peñoles";
+"Mixtec, Pinotepa Nacional"                = "Mixtèque de Pinotepa Nacional";
+"Mixtec, San Juan Colorado"                = "Mixtèque de San Juan Colorado";
+"Mixtec, San Miguel el Grande"             = "Mixtèque de San Miguel el Grande";
+"Mixtec, Santa Lucía Monteverde"           = "Mixtèque de Santa Lucía Monteverde";
+"Mixtec, Santa María Zacatepec"            = "Mixtèque de Santa María Zacatepec";
+"Mixtec, Silacayoapan"                     = "Mixtèque de Silacayoapan";
+"Mixtec, Southwestern Tlaxiaco"            = "Mixtèque de Tlaxiaco Sud-Ouest";
+"Mixtec, Tezoatlán"                        = "Mixtèque de Tezoatlán";
+"Mixtec, Yosondúa"                         = "Mixtèque de Yosondúa";
+"Mongolian, Halh"                          = "Mongol";
+"Murle"                                    = "Murle";
+"Nahuatl, Eastern Huasteca"                = "Nahuatl de Huasteca Est";
+"Nahuatl, Guerrero"                        = "Nahuatl de Guerrero";
+"Nahuatl, Northern Oaxaca"                 = "Nahuatl de Oaxaca Nord";
+"Nahuatl, Sierra Negra"                    = "Nahuatl de Sierra Negra";
+"Nahuatl, Southeastern Puebla"             = "Nahuatl de Southeastern Puebla";
+"Nahuatl, Tlamacazapa"                     = "Nahuatl de Tlamacazapa";
+"Nahuatl, Zacatlán-Ahuacatlán-Tepetzintla" = "Nahuatl de Zacatlán-Ahuacatlán-Tepetzintla";
+"Navajo"                                   = "Navajo";
+"Nepali"                                   = "Népalais";
+"Nuer"                                     = "Nuer";
+"Oriya"                                    = "Oriya";
+"Oromo, Borana-Arsi-Guji"                  = "Oromo de Borana-Arsi-Guji";
+"Palaung, Ruching"                         = "Palaung, Ruching";
+"Persian"                                  = "Persan";
+"Polish"                                   = "Polonais";
+"Punjabi"                                  = "Pendjabi";
+"Romanian"                                 = "Roumain";
+"Russian"                                  = "Russe";
+"Slovak"                                   = "Slovaque";
+"Spanish"                                  = "Espagnol";
+"Sunda"                                    = "Soundanais";
+"Tachelhit"                                = "Chleuh";
+"Tamil"                                    = "Tamil";
+"Telugu"                                   = "Télougou";
+"Tigrigna"                                 = "Tigrigna";
+"Tonga (Nyasa)"                            = "Tonga de Nyasa Ouest";
+"Tswa"                                     = "Tswa";
+"Urdu"                                     = "Ourdou";
+"Vietnamese"                               = "Vietnamien";
+"Yanomamö"                                 = "Yanomami";
+"Zapotec, Quioquitani-Quierí"              = "Zapotèque de Quioquitani-Quierí";
+"Zapotec, San Juan Guelavía"               = "Zapotèque de San Juan Guelavía";
+"Zapotec, Yatee"                           = "Zapotèque de Yatee";
